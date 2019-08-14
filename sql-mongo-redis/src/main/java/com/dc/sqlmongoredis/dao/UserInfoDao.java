@@ -11,4 +11,6 @@ import java.util.List;
 public interface UserInfoDao {
     /**查询所有*/
     List<UserInfo> findAll();
+
+    UserInfo findById(int id);
 }

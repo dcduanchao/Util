@@ -23,4 +23,9 @@ public class UserInfoDaoImpl implements UserInfoDao {
     public List<UserInfo> findAll() {
         return userInfoMapper.findAll();
     }
+
+    @Override
+    public UserInfo findById(int id) {
+        return userInfoMapper.findById(id);
+    }
 }

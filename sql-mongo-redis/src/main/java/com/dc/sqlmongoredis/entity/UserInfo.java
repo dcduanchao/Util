@@ -20,4 +20,14 @@ public class UserInfo implements Serializable {
     private String pwd;
 
     private Date createTime;
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", createTime=" + createTime +
+                '}';
+    }
 }
