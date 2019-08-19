@@ -1,4 +1,4 @@
-package com.dc.sqlmongoredis.service;
+package com.dc.sqlmongoredis.service.test;
 
 /**
  * @author duanchao

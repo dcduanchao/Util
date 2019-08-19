@@ -39,8 +39,14 @@ public class UserInfoServiceImpl implements UserInfoService {
             return u;
 
         }
-        return null;
+        return byId;
     }
 
-  
+    @Override
+    public UserInfo findby(UserInfo userInfo) {
+        UserInfo byId = userInfoDao.findById(userInfo.getId());
+        return byId;
+    }
+
+
 }

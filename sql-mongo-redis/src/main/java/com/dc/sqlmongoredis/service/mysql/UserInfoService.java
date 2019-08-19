@@ -13,4 +13,6 @@ public interface UserInfoService {
     List<UserInfo> findAll();
 
     UserInfo findById(Integer id);
+
+    UserInfo findby(UserInfo userInfo);
 }
