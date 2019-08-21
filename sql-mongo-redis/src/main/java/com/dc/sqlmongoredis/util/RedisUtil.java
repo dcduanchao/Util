@@ -20,12 +20,6 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class RedisUtil {
 
-//    @Autowired
-//    private RedisTemplate redisTemplate;
-//
-//    public RedisUtil(RedisTemplate redisTemplate) {
-//        this.redisTemplate = redisTemplate;
-//    }
 
     @Resource
     private RedisTemplate<String,Object> redisTemplate;

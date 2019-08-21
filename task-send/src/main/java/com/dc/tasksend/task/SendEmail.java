@@ -50,7 +50,7 @@ public class SendEmail {
     }
 
       public void getData(Integer type){
-          List<MotivationalDto> byType = motivationalService.findByType(1);
+          List<MotivationalDto> byType = motivationalService.findByType(type);
           if(CollectionUtils.isEmpty(byType)){
               return ;
           }
