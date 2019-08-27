@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -21,8 +19,11 @@ public class SqlMongoRedisApplicationTests {
 
     @Test
     public void contextLoads() {
-        UserInfo byId = userInfoService.findById(183);
-        System.out.println(byId.getId()==183);
+//        UserInfo byId = userInfoService.findById(183);
+//        System.out.println(byId.getId()==183);
+
+        List<UserInfo> all = userInfoService.findAll();
+        System.out.println(all);
 
     }
 
@@ -30,6 +31,11 @@ public class SqlMongoRedisApplicationTests {
     public  void list(){
        int a = 183;
         System.out.println(183==a);
+        UserInfo u = new UserInfo();
+
+
+
+
     }
 
 }

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
-@PropertySource(value = {"dev.properties"})
+@PropertySource("classpath:dev1.properties")
 @ConfigurationProperties(prefix = "dev.dc")
 public class LoaderProperties {
 

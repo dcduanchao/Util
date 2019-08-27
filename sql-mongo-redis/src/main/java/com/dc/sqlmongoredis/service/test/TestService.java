@@ -377,4 +377,19 @@ public class TestService  {
         }
     }
 
+
+
+    static int arrayNesting(int[] nums) {
+       int l = nums.length;
+        List<Integer> list = new ArrayList<>();
+
+        int count = 0;
+
+
+
+        return 0;
+//
+    }
+
+
 }

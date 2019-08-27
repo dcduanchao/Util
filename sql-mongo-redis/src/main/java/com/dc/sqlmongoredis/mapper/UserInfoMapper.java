@@ -16,7 +16,7 @@ import java.util.List;
 @Component
 public interface UserInfoMapper {
 
-    @Select("select * from user_info")
+//    @Select("select * from user_info")
     List<UserInfo> findAll();
 
     @Select( "select * from user_info where id = #{id}")
